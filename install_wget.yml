@@ -1,0 +1,11 @@
+
+---
+- hosts: appserver
+  gather_facts: "True"
+  become: "True"
+  tasks:
+  -  name: install tree
+     apt:
+       name: wget
+       state: present 
+
