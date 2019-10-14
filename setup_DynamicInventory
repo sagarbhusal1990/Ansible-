@@ -1,0 +1,17 @@
+Steps to setup tools to run the dynamic inventory 
+
+1. sudo apt-get install -y python3.6 
+2. sudo apt-get install -y python3-pip 
+3. sudo pip3 install virtualenv 
+4. mkdir -p ~/ansible-dir 
+5. cd ansible-dir 
+6. virtualenv venv 
+7. source venv/bin/activate 
+8. pip install ansible 
+9. pip install awscli boto boto3 
+10. pip install botocore
+ 
+and, then run this command - ansible-inventory -i aws_ec2.yml –list
+ 
+Now, you will be good to work with Ansible AWS Dynamic Inventory
+
